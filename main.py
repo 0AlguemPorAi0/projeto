@@ -23,7 +23,7 @@ async def root():
 
 @app.get("/fila")
 async def senha():
-    return {"senha": True, "num_aleatorio": random.randint(0, 1000)}
+    return {"senha": True, "num_aleatorio": random.randint(0, 500)}
 
 @app.post("/carros/", response_model=Carro)
 async def criar_carro(carro: Carro):
